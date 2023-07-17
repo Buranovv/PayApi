@@ -67,6 +67,11 @@ input {
   cursor: pointer;
   z-index: 1;
 }
+
+:root {
+  --main-bg-color: #edf3f8;
+}
+
 .main-btn:hover {
   background: #da6d97;
 }
