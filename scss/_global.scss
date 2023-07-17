@@ -23,6 +23,10 @@
   font-style: normal;
 }
 
+body {
+  font-family: Public Sans Regular;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +65,7 @@ input {
   @include btn;
 
   cursor: pointer;
+  z-index: 1;
 }
 .main-btn:hover {
   background: #da6d97;

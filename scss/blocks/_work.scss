@@ -1,0 +1,105 @@
+.work {
+  background: #1b262f;
+
+  &__box {
+    padding: 100px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 62px;
+    row-gap: 54px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    margin-bottom: 48px;
+
+    color: #fbfcfe;
+    font-family: DM SerifDisplay;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+  }
+  &__text {
+    max-width: 445px;
+    margin-bottom: 32px;
+
+    color: #fbfcfe;
+    font-size: 15px;
+    line-height: 28px;
+
+    opacity: 0.699999988079071;
+  }
+  &__btn {
+    background: inherit;
+    border: 1px solid #fbfcfe;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .work {
+    text-align: center;
+    &__box {
+      flex-direction: column-reverse;
+      gap: 64px;
+    }
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .work {
+    &__logos {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 57px;
+      row-gap: 48px;
+    }
+    &__box {
+      flex-direction: column-reverse;
+      gap: 56px;
+    }
+  }
+}
+@media only screen and (max-width: 490px) {
+  .work {
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__text {
+      width: 327px;
+      font-size: 15px;
+      line-height: 28px;
+    }
+    &__logo:nth-child(1) {
+      width: 107px;
+      height: 15px;
+    }
+    &__logo:nth-child(2) {
+      width: 120px;
+      height: 26px;
+    }
+    &__logo:nth-child(3) {
+      width: 115px;
+      height: 22px;
+    }
+    &__logo:nth-child(4) {
+      width: 108px;
+      height: 14px;
+    }
+    &__logo:nth-child(5) {
+      width: 79px;
+      height: 27px;
+    }
+    &__logo:nth-child(6) {
+      width: 113px;
+      height: 22px;
+    }
+  }
+}

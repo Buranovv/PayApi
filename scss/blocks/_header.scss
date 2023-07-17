@@ -1,5 +1,22 @@
 .header {
   background: #edf3f8;
+  position: relative;
+
+  // &::before {
+  //   content: "";
+
+  //   max-width: 780px;
+  //   max-height: 780px;
+  //   background: #36536b;
+  //   border-radius: 50%;
+
+  //   position: absolute;
+  //   right: -172px;
+  //   top: -140px;
+
+  //   opacity: 0.3;
+  // }
+
   &__box {
     display: flex;
     align-items: center;
@@ -41,7 +58,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .dropdown {
     // display: block;
     &__svg {

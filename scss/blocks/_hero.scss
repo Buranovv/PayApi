@@ -2,6 +2,7 @@
   background: #edf3f8;
   padding: 74px 0 76px;
 
+  
   &__box {
     display: flex;
     align-items: center;
@@ -29,7 +30,9 @@
     );
     border: 12px solid rgb(1, 1, 44);
     border-radius: 25px;
+
     position: relative;
+z-index: 1;
     .ker {
       width: 100px;
       height: 15px;
@@ -101,6 +104,9 @@
       flex-direction: column-reverse;
       text-align: center;
       gap: 49px;
+    }
+    &__content{
+      padding: 0;
     }
     &__title {
       margin-bottom: 22px;
