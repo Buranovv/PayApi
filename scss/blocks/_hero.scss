@@ -2,7 +2,6 @@
   background: #edf3f8;
   padding: 74px 0 76px;
 
-  
   &__box {
     display: flex;
     align-items: center;
@@ -18,30 +17,7 @@
     line-height: 72px;
     letter-spacing: -0.554px;
   }
-  .div {
-    width: 263px;
-    height: 500px;
-    background: linear-gradient(
-      180deg,
-      #9cb6cd 0%,
-      #9ab3ca 42.06%,
-      #557496 71.66%,
-      #475178 100%
-    );
-    border: 12px solid rgb(1, 1, 44);
-    border-radius: 25px;
-
-    position: relative;
-z-index: 1;
-    .ker {
-      width: 100px;
-      height: 15px;
-      margin: 0 auto;
-      background: rgb(1, 1, 44);
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-    }
-  }
+  
 
   .input {
     border-radius: 24px;
@@ -64,6 +40,29 @@ z-index: 1;
     margin-left: -30.23px;
   }
 }
+.div {
+  width: 263px;
+  height: 500px;
+  background: linear-gradient(
+    180deg,
+    #9cb6cd 0%,
+    #9ab3ca 42.06%,
+    #557496 71.66%,
+    #475178 100%
+  );
+  border: 12px solid rgb(1, 1, 44);
+  border-radius: 25px;
+
+  position: relative;
+  .ker {
+    width: 100px;
+    height: 15px;
+    margin: 0 auto;
+    background: rgb(1, 1, 44);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
 
 @media only screen and (max-width: 1010px) {
   .hero {
@@ -79,21 +78,20 @@ z-index: 1;
       font-size: 50px;
       line-height: 50px;
     }
-    .div {
-      width: 200px;
-      height: 427px;
-    }
+   
     &__content {
       padding-right: 100px;
     }
   }
+  .div {
+    width: 200px;
+    height: 427px;
+  }
 }
 @media only screen and (max-width: 860px) {
-  .hero {
-    .div {
-      width: 200px;
-      height: 350px;
-    }
+  .div {
+    width: 200px;
+    height: 350px;
   }
 }
 
@@ -105,7 +103,7 @@ z-index: 1;
       text-align: center;
       gap: 49px;
     }
-    &__content{
+    &__content {
       padding: 0;
     }
     &__title {
@@ -114,13 +112,14 @@ z-index: 1;
       font-size: 48px;
       line-height: 56px;
     }
-    .div {
-      width: 156px;
-      height: 300px;
-    }
+    
     &__text {
       margin: 0;
     }
+  }
+  .div {
+    width: 156px;
+    height: 300px;
   }
 }
 
