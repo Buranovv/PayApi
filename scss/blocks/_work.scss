@@ -39,6 +39,15 @@
     background: inherit;
     border: 1px solid #fbfcfe;
   }
+  &__btn:hover {
+    background: #fff;
+    color: inherit;
+  }
+  &__btn:active {
+    background: inherit;
+    border: 1px solid #fbfcfe;
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 910px) {
