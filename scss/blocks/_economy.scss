@@ -1,0 +1,70 @@
+.economy {
+  background: #edf3f8;
+
+  &__box {
+    padding: 150px 0 0;
+
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    margin-top: 32px;
+
+    color: #36536b;
+    text-align: center;
+    font-family: Public Sans Bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.138px;
+  }
+  &__text {
+    margin-top: 16px;
+    max-width: 350px;
+
+    color: #36536b;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115px;
+
+    opacity: 0.699999988079071;
+  }
+  &__card {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .economy {
+    &__box {
+      padding: 100px 0 0;
+      gap: 10px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .economy {
+    &__box {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+
+      justify-content: center;
+      row-gap: 50px;
+    }
+    &__card {
+      justify-self: center;
+    }
+  }
+}

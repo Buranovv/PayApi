@@ -84,6 +84,9 @@
 
 @media only screen and (max-width: 500px) {
   .easy {
+    &__box {
+      padding: 80px 0 0;
+    }
     &__code {
       width: 328px;
       height: 209px;

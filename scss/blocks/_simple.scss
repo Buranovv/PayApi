@@ -1,12 +1,11 @@
 .simple {
-  padding: 150px 0 0;
-
   background: #edf3f8;
 
   &__box {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 150px 0 0;
   }
   &__imgs {
     display: flex;
@@ -28,6 +27,8 @@
     color: #36536b;
     font-size: 15px;
     line-height: 28px;
+
+    opacity: 0.699999988079071;
   }
 }
 
@@ -62,6 +63,9 @@
 }
 @media only screen and (max-width: 410px) {
   .simple {
+    &__box {
+      padding: 100px 0 0;
+    }
     &__title {
       font-size: 36px;
       line-height: 36px;
