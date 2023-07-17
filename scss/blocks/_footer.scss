@@ -1,5 +1,15 @@
 .footer {
   background: #1b262f;
+  position: relative;
+
+  &::before {
+    content: url(../../images/fimg.png);
+
+    position: absolute;
+    right: 0;
+
+    opacity: 0.3;
+  }
 
   &__box {
     padding: 31px 0;
@@ -16,6 +26,8 @@
     display: flex;
     align-items: center;
     gap: 48px;
+
+    z-index: 1;
   }
   &__list {
     display: flex;
@@ -37,6 +49,9 @@
       flex-direction: column;
       gap: 40px;
     }
+    &::before {
+      display: none;
+    }
   }
 }
 @media only screen and (max-width: 460px) {
@@ -48,10 +63,17 @@
     }
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   .footer {
     &__list {
       flex-direction: column;
+    }
+
+    &::before {
+      content: url(../../images/f3img.png);
+
+      display: block;
+      bottom: 0;
     }
   }
 }

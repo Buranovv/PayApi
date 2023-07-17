@@ -1,5 +1,14 @@
 .work {
   background: #1b262f;
+  position: relative;
+
+  &::before {
+    content: url(../../images/wimg.png);
+
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+  }
 
   &__box {
     padding: 100px 0;
@@ -15,6 +24,8 @@
     row-gap: 54px;
     align-items: center;
     justify-content: center;
+
+    z-index: 1;
   }
   &__title {
     margin-bottom: 48px;
@@ -24,6 +35,9 @@
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -0.369px;
+
+    position: relative;
+    z-index: 1;
   }
   &__text {
     max-width: 445px;
@@ -59,6 +73,20 @@
     }
     &__title {
       margin-bottom: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .work {
+    &::before {
+      content: url(../../images/w2img.png);
+    }
+  }
+}
+@media only screen and (max-width: 740px) {
+  .work {
+    &::before {
+      display: none;
     }
   }
 }
@@ -109,6 +137,21 @@
     &__logo:nth-child(6) {
       width: 113px;
       height: 22px;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .work {
+    &::before {
+      content: url(../../images/w3img.png);
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+  .work {
+    &::before {
+      display: none;
     }
   }
 }

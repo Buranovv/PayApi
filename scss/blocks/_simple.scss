@@ -1,6 +1,15 @@
 .simple {
   background: var(--main-bg-color);
 
+  &::before {
+    content: url(../images/mimg.png);
+
+    position: absolute;
+
+    opacity: 0.3;
+    right: 0;
+  }
+
   &__box {
     display: flex;
     align-items: center;
@@ -45,6 +54,9 @@
 }
 @media only screen and (max-width: 900px) {
   .simple {
+    &::before {
+      display: none;
+    }
     &__box {
       flex-direction: column-reverse;
       text-align: center;
