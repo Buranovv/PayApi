@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/index.min.css" />
 
     <title>Home</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__box">
           <div class="header__nav">
@@ -125,9 +131,9 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
-    <!-- <main>
+    <main>
       <section class="hero">
         <div class="container">
           <div class="hero__box">
@@ -135,22 +141,38 @@
               <h1 class="hero__title">
                 Start building with our APIs for absolutely free.
               </h1>
-              <form class="form" action="" method="post">
+
+              <form
+                class="form"
+                action="
+              https://echo.htmlacademy.ru/"
+                method="post"
+                target="_blank"
+              >
                 <input
+                  name="Email"
                   type="email"
                   class="input"
                   placeholder="Enter email address"
+                  required
                 />
-                <button class="main-btn" type="submit">Schedule a Demo</button>
+                <button class="main-btn hero__btn" type="submit">
+                  Schedule a Demo
+                </button>
               </form>
+
               <p class="hero__text" style="display: inline">
                 Have any questions?
               </p>
               <a href="#" class="header__item">Contact us</a>
             </div>
+            <div class="div">
+              <div class="ker"></div>
+              <div class="vol"></div>
+            </div>
           </div>
         </div>
       </section>
-    </main> -->
+    </main>
   </body>
 </html>
