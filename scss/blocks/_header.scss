@@ -37,6 +37,9 @@
     line-height: normal;
 
     opacity: 0.699999988079071;
+
+    position: relative;
+    z-index: 10;
   }
   &__item:hover {
     opacity: 1;
